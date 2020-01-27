@@ -1,28 +1,50 @@
 #!/bin/bash
 
-echo "========== PSC's MOULINETTE =========="
+clear
+
+echo "# **************************************************************************** #"
+echo "#                                                                              #"
+echo "#                                                         :::      ::::::::    #"
+echo "#    PSC's MOULINETTE.sh                                :+:      :+:    :+:    #"
+echo "#                                                     +:+ +:+         +:+      #"
+echo "#    By: shpark <shpark@student.42.fr>              +#+  +:+       +#+         #"
+echo "#                                                 +#+#+#+#+#+   +#+            #"
+echo "#    Created: 2020/01/28 04:12:24 by shpark            #+#    #+#              #"
+echo "#    Updated: 2020/01/28 04:12:24 by shpark           ###   ########.fr        #"
+echo "#                                                                              #"
+echo "# **************************************************************************** #"
+
+echo "========== NORMINETTE  =========="
+cd ../../
+
+for i in $(seq 0 8); do
+	cd ex0$i
+	rm -rf main.c
+	norminette -R CheckForbiddenSourceHeader | cat
+	cd ../
+done
+
+cd Test_case_42/c01/ 
 
 echo "========== MOVE FILE =========="
 
 for i in $(seq 0 8); do
 	cd ex0$i/
 	cp main.c ../../../ex0$i/
+	cd ../
 done
 
 cd ../../
 
-echo "========== NORMINETTE  =========="
-
-norminette -R CheckForbiddenSourceHeader | cat
-
 echo "---------- GCC"
 
-for i in $(seq 1 8); do
+for i in $(seq 0 8); do
 	cd ex0$i/
-	echo "========== COMPILE =========="
-	gcc -Wall -Wextra -Werror main.c *.c | cat
+	echo "========= COMPILE =========="
+	gcc -Wall -Wextra -Werror main.c | cat
 	chmod +x a.out
 	echo "========== RESULT =========="
 	./a.out
 	rm -rf a.out
+	cd ../
 done

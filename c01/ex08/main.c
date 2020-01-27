@@ -1,3 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: shpark <shpark@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/01/28 03:45:27 by shpark            #+#    #+#             */
+/*   Updated: 2020/01/28 04:05:53 by shpark           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+#include "ft_sort_int_tab.c"
+
 void	debug_dump_array(int numbers[], int size)
 {
 	int index;
@@ -18,9 +33,9 @@ void	debug_dump_array(int numbers[], int size)
 
 int		main(void)
 {
-	int numbers[9];
-	int *first_pointer;
-	int index;
+	int	numbers[9];
+	int	*first_pointer;
+	int	index;
 
 	index = 0;
 	while (index < 9)

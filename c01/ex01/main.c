@@ -1,15 +1,30 @@
-int     main(void)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: shpark <shpark@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/01/28 03:44:32 by shpark            #+#    #+#             */
+/*   Updated: 2020/01/28 04:04:51 by shpark           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+#include "ft_ultimate_ft.c"
+
+int	main(void)
 {
-    int a;
-    int *ptr1;
-    int **ptr2;
-    int ***ptr3;
-    int ****ptr4;
-    int *****ptr5;
-    int ******ptr6;
-    int *******ptr7;
-    int ********ptr8;
-    int *********ptr9;
+    int	a;
+    int	*ptr1;
+    int	**ptr2;
+    int	***ptr3;
+    int	****ptr4;
+    int	*****ptr5;
+    int	******ptr6;
+    int	*******ptr7;
+    int	********ptr8;
+    int	*********ptr9;
 
     a = 1;
     ptr1 = &a;
