@@ -3,7 +3,7 @@
 
 - shpark by 42 Seoul 1th
  
-- Use this example to test your 42 C Piscine subjects.
+- Use this example to test your 42 C Piscine subjects or review your peer's codes.
 
 # How to use
 
