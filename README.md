@@ -14,3 +14,5 @@
 4. Excute ```test.sh```
 
 ## Don't change Folders, Files Name. Just Use IT
+
+## You must have all of your subjects *.c files (although you have just empty file!)
