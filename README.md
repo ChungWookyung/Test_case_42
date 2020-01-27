@@ -7,7 +7,7 @@
 
 1. ``` git clone https://github.com/michaelparkerr/Test_case_42``` in directory you want test
 
-2 ```cd Test_case_42```
+2. ```cd Test_case_42```
 
 3. ```cd cxx```(what you test)
 
