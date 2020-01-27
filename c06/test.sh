@@ -17,37 +17,53 @@ echo "# ************************************************************************
 echo "========== NORMINETTE  =========="
 cd ../../
 
-for i in $(seq 0 8); do
+for i in $(seq 0 3); do
 	cd ex0$i
 	rm -rf main.c
 	norminette -R CheckForbiddenSourceHeader | cat
 	cd ../
 done
 
-cd Test_case_42/c05/
-
-echo "========== MOVE FILE =========="
-
-for i in $(seq 0 8); do
-	cd ex0$i/
-	cp main.c ../../../ex0$i/
-	cd ../
-done
+cd Test_case_42/c06/
 
 cd ../../
 
 echo "---------- GCC"
 
-for i in $(seq 0 8); do
-	cd ex0$i/
-	echo "========== ex0$i ============"
-	echo "========= COMPILE =========="
-	gcc -Wall -Wextra -Werror main.c
-	chmod +x a.out
-	echo "========== RESULT =========="
-	./a.out
-	rm -rf a.out
-	rm -rf main.c
-	cd ../
-	sleep 5;
-done
+cd ex00/
+echo "========== ex00 ============"
+echo "========= COMPILE =========="
+gcc -Wall -Wextra -Werror ft_print_program_name.c
+chmod +x a.out
+echo "========== RESULT =========="
+./a.out
+rm -rf a.out
+cd ../
+cd ex01/
+echo "========== ex01 ============"
+echo "========= COMPILE =========="
+gcc -Wall -Wextra -Werror ft_print_params.c
+chmod +x a.out
+echo "========== RESULT =========="
+./a.out test1 test2 test3
+rm -rf a.out
+cd ../
+cd ex02/
+echo "========== ex02 ============"
+echo "========= COMPILE =========="
+gcc -Wall -Wextra -Werror ft_rev_params.c
+chmod +x a.out
+echo "========== RESULT =========="
+./a.out 1 2 3 4 5 6 a b c d e f g k
+rm -rf a.out
+cd ../
+cd ex03/
+echo "========== ex03 ============"
+echo "========= COMPILE =========="
+gcc -Wall -Wextra -Werror ft_sort_params.c
+chmod +x a.out
+echo "========== RESULT =========="
+./a.out \? \! 1 a 2 b 3 c 4 d \"
+rm -rf a.out
+cd ../
+
