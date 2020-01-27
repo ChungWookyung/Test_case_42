@@ -1,13 +1,13 @@
 # Test_case_42
 =======
  
-- Use this example to test your 42 subjects.
+- Use this example to test your 42 C Piscine subjects.
 
 # How to use
 
 1. ``` git clone https://github.com/michaelparkerr/Test_case_42``` in directory you want test
 
-2. go to cxx directory
+2. ```cd cxx```(what you test)
 
 3. Excute ```test.sh```
 
