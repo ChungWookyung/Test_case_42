@@ -1,5 +1,14 @@
 # Test_case_42
 =======
- # Test_case_42
  
- ## Use this example to test your 42 subjects.
+- Use this example to test your 42 subjects.
+
+# How to use
+
+1. ``` git clone https://github.com/michaelparkerr/Test_case_42``` in directory you want test
+
+2. go to cxx directory
+
+3. Excute ```test.sh```
+
+## Don't change Folders, Files Name. Just Use IT
