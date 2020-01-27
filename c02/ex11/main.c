@@ -6,9 +6,15 @@
 /*   By: shpark <shpark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 04:46:56 by shpark            #+#    #+#             */
-/*   Updated: 2020/01/28 04:50:39 by shpark           ###   ########.fr       */
+/*   Updated: 2020/01/28 05:16:51 by shpark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdbool.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include "ft_putstr_non_printable.c"
 
 int		main(void)
 {
@@ -18,9 +24,8 @@ int		main(void)
 	char	*string;
 
 	string = "Coucou\ntu vas bien ?";
-	printf("real string : %s",string);
 	ft_putstr_non_printable(string);
-	printf("changed string : %s", string);
+	printf("\n");
 	
 	buffer = 0;
 	f = fopen("blah.bin", "rb");
@@ -36,7 +41,6 @@ int		main(void)
 		}
 		fclose(f);
 	}
-	printf("real string : %s",buffer);
 	ft_putstr_non_printable(buffer);
-	printf("changed string : %s", buffer);
+	printf("\n");
 }

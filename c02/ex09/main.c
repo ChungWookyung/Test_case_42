@@ -6,7 +6,7 @@
 /*   By: shpark <shpark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 04:41:37 by shpark            #+#    #+#             */
-/*   Updated: 2020/01/28 04:46:14 by shpark           ###   ########.fr       */
+/*   Updated: 2020/01/28 05:18:43 by shpark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 int		main(void)
 {
 	char	*str_base;
+	char	*str_base1;
 	char	str_cap[36];
 	char	str_cap1[60];
 	int		index;
@@ -38,7 +39,7 @@ int		main(void)
 	}
 	ft_strcapitalize(&str_cap[0]);
 	ft_strcapitalize(&str_cap1[0]);
-	printf("base        : %s\n", str_base);
-	printf("capitalized : %s\n", str_lower);
-	printf("%s\n", str_cap);
+	printf("base 		: %s\n", str_base);
+	//printf("capitalized : %s\n", str_lower);
+	printf("changed		: %s\n", str_cap);
 }

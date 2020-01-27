@@ -17,37 +17,20 @@ echo "# ************************************************************************
 echo "========== NORMINETTE  =========="
 cd ../../
 
-for i in $(seq 0 9); do
+for i in $(seq 0 8); do
 	cd ex0$i
 	rm -rf main.c
-	norminette -R CheckForbiddenSourceHeader
+	norminette -R CheckForbiddenSourceHeader | cat
 	cd ../
 done
 
-for i in $(seq 10 12); do
-	cd ex$i
-	rm -rf main.c
-	norminette -R CheckForbiddenSourceHeader
-	cd ../
-done
-
-cd Test_case_42/c02/
-
-cd ex11
-mv blah.bin ../../../ex11
-cd ../
+cd Test_case_42/c01/
 
 echo "========== MOVE FILE =========="
 
-for i in $(seq 0 9); do
+for i in $(seq 0 8); do
 	cd ex0$i/
 	cp main.c ../../../ex0$i/
-	cd ../
-done
-
-for i in $(seq 10 12); do
-	cd ex$i/
-	cp main.c ../../../ex$i/
 	cd ../
 done
 
@@ -55,7 +38,7 @@ cd ../../
 
 echo "---------- GCC"
 
-for i in $(seq 0 9); do
+for i in $(seq 0 8); do
 	cd ex0$i/
 	echo "========== ex0$i ============"
 	echo "========= COMPILE =========="
@@ -66,15 +49,3 @@ for i in $(seq 0 9); do
 	rm -rf a.out
 	cd ../
 done
-for i in $(seq 10 12); do
-	cd ex$i/
-	echo "========== ex$i ============"
-	echo "========= COMPILE =========="
-	gcc -Wall -Wextra -Werror main.c
-	chmod +x a.out
-	echo "========== RESULT =========="
-	./a.out
-	rm -rf a.out
-	cd ../
-done
-

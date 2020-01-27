@@ -6,12 +6,13 @@
 /*   By: shpark <shpark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 04:40:36 by shpark            #+#    #+#             */
-/*   Updated: 2020/01/28 04:40:50 by shpark           ###   ########.fr       */
+/*   Updated: 2020/01/28 05:08:17 by shpark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdbool.h>
 #include <stdio.h>
+#include "ft_strupcase.c"
 
 int		main(void)
 {

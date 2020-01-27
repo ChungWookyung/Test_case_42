@@ -5,22 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: shpark <shpark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/28 04:25:44 by shpark            #+#    #+#             */
-/*   Updated: 2020/01/28 05:04:01 by shpark           ###   ########.fr       */
+/*   Created: 2020/01/28 05:29:37 by shpark            #+#    #+#             */
+/*   Updated: 2020/01/28 05:29:55 by shpark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdbool.h>
-#include <stdio.h>
-#include "ft_str_is_alpha.c"
+#include <unistd.h>
+#include "ft_print_reverse_alphabet.c"
 
 int		main(void)
 {
-	char *str_valid;
-	char *str_invalid;
-
-	str_valid = "Hello";
-	str_invalid = "Hell0";
-	printf("should be 1: %d\n", ft_str_is_alpha(str_valid));
-	printf("should be 0: %d\n", ft_str_is_alpha(str_invalid));
+	ft_print_reverse_alphabet();
 }
