@@ -90,7 +90,7 @@ int	main(void)
 		if (results[0])
 			count++;
 	}
-	printf("is_prime(%d) = %d\n", INT_MAX, is_prime(INT_MAX));
+	printf("is_prime(%d) = %d\n", 2147483647, is_prime(2147483647));
 	printf("first 50'000 number, %d prime\n", count);
 	return (0);
 }

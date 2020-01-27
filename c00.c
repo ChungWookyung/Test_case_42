@@ -1,4 +1,4 @@
-ex 00 ft_putchar.c
+ex00 ft_putchar.c
 
 int		main(void)
 {
