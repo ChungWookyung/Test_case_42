@@ -75,6 +75,7 @@ for i in $(seq 10 12); do
 	echo "========== RESULT =========="
 	./a.out
 	rm -rf a.out
+	rm -rf main.c
 	cd ../
 done
 
