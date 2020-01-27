@@ -17,18 +17,18 @@ echo "# ************************************************************************
 echo "========== NORMINETTE  =========="
 cd ../../
 
-for i in $(seq 0 8); do
+for i in $(seq 0 5); do
 	cd ex0$i
 	rm -rf main.c
 	norminette -R CheckForbiddenSourceHeader | cat
 	cd ../
 done
 
-cd Test_case_42/c00/
+cd Test_case_42/c03/
 
 echo "========== MOVE FILE =========="
 
-for i in $(seq 0 8); do
+for i in $(seq 0 5); do
 	cd ex0$i/
 	cp main.c ../../../ex0$i/
 	cd ../
@@ -38,7 +38,7 @@ cd ../../
 
 echo "---------- GCC"
 
-for i in $(seq 0 8); do
+for i in $(seq 0 5); do
 	cd ex0$i/
 	echo "========== ex0$i ============"
 	echo "========= COMPILE =========="
