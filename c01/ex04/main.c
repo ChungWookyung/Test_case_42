@@ -6,7 +6,7 @@
 /*   By: shpark <shpark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 03:45:02 by shpark            #+#    #+#             */
-/*   Updated: 2020/01/28 04:08:17 by shpark           ###   ########.fr       */
+/*   Updated: 2020/01/28 04:35:06 by shpark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ int		main(void)
 	a = 5;
 	b = 2;
 	ft_ultimate_div_mod(&a, &b);
-	printf("div %d, left %d", a, b);
+	printf("div %d, left %d\n", a, b);
 }

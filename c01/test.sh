@@ -40,8 +40,9 @@ echo "---------- GCC"
 
 for i in $(seq 0 8); do
 	cd ex0$i/
+	echo "========== ex0$i ============"
 	echo "========= COMPILE =========="
-	gcc -Wall -Wextra -Werror main.c | cat
+	gcc -Wall -Wextra -Werror main.c
 	chmod +x a.out
 	echo "========== RESULT =========="
 	./a.out
