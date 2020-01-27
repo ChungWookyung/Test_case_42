@@ -6,13 +6,13 @@
 /*   By: shpark <shpark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 05:37:58 by shpark            #+#    #+#             */
-/*   Updated: 2020/01/28 05:38:15 by shpark           ###   ########.fr       */
+/*   Updated: 2020/01/28 05:59:03 by shpark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
-#include "ft_strcat.h"
+#include "ft_strcat.c"
 
 int		main(void)
 {

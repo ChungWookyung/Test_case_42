@@ -6,12 +6,12 @@
 /*   By: shpark <shpark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 05:43:53 by shpark            #+#    #+#             */
-/*   Updated: 2020/01/28 05:44:06 by shpark           ###   ########.fr       */
+/*   Updated: 2020/01/28 06:00:53 by shpark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include "ft_putnbr"
+#include "ft_putnbr.c"
 
 int		main(void)
 {
