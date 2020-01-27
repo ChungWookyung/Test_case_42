@@ -6,7 +6,7 @@ echo "========== MOVE FILE =========="
 
 for i in $(seq 0 8); do
 	cd ex0$i/
-	mv main.c ../../../ex0$i/
+	cp main.c ../../../ex0$i/
 done
 
 cd ../../
